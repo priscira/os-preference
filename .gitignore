@@ -1,1 +1,7 @@
 .priscira
+.lokalius
+
+config/g/index
+config/pypoetry
+!config/pypoetry/config.toml
+config/rio/themes

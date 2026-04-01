@@ -7,4 +7,4 @@ Args:
     - time-style=locale
     - format=across
     - sort=name
-    - theme=/home/logarius/.config/g/pnevma.json
+    - theme=/home/lokalius/.config/g/pnevma.json

@@ -50,7 +50,7 @@ padding-y = [13, 13]
 # Default is `1.0`
 #
 # Example:
-line-height = 1.3
+line-height = 1.4
 
 # Startup directory
 #
@@ -130,9 +130,9 @@ content = "{{ PROGRAM }} - {{ ABSOLUTE_PATH }}"
 #
 # Example:
 [window]
-width = 1000
-height = 1300
-mode = "Windowed"
+width = 1300
+height = 1100
+mode = "Maximized"
 opacity = 1.0
 blur = true
 decorations = "Disabled"
@@ -320,8 +320,8 @@ color-automation = []
 # program = "/opt/homebrew/bin/tmux"
 # args = ["new-session", "-c", "/var/www"]
 [shell]
-program = "osh"
-args = []
+program = "murex"
+args = ["--quiet"]
 
 # Colors
 #
@@ -399,5 +399,4 @@ keys = [
   { key = "7", with = "control | shift", action = "None" },
   { key = "8", with = "control | shift", action = "None" },
   { key = "9", with = "control | shift", action = "None" },
-
 ]

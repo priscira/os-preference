@@ -1,3 +1,5 @@
+export GOPATH="$HOME/.gopkg"
+
 config set shell spellcheck-enabled false
 
 config set shell prompt {
@@ -26,5 +28,4 @@ config set shell prompt {
 
 export VIRTUAL_ENV_DISABLE_PROMPT = 1
 
-alias l-ls = exec g
-
+alias lls = exec g
