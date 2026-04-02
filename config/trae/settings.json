@@ -1,0 +1,46 @@
+{
+    "trae.notification.enableOffersAndPromotions": false,
+    "trae.tab.enableAutoImport": false,
+    "trae.tab.enableAutoRename": false,
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'UbuntuMono Nerd Font', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
+    "editor.rulers": [
+        { "column": 100, "color": "#044b5b" }
+    ],
+    "window.zoomLevel": 1.3,
+    "editor.inlineSuggest.fontFamily": "'UbuntuMono Nerd Font Mono', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
+    "debug.console.fontFamily": "'UbuntuMono Nerd Font Mono', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
+    "chat.editor.fontFamily": "'UbuntuMono Nerd Font Mono', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
+    "chat.fontFamily": "'UbuntuMono Nerd Font Mono', 'OPPO Sans 4.0'",
+    "markdown.preview.fontFamily": "'UbuntuMono Nerd Font Mono', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
+    "workbench.colorTheme": "Kiro Dark",
+    "workbench.iconTheme": "simple-icons",
+    "git.openRepositoryInParentFolders": "never",
+    "trae.guide.neverShowNoticeForLanguages": [
+        "node",
+        "python"
+    ],
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true
+    },
+    "editor.unicodeHighlight.includeStrings": false,
+    "python.languageServer": "Jedi",
+    "debugpy.debugJustMyCode": false,
+    "python-envs.alwaysUseUv": false,
+    "editor.codeLensFontFamily": "'UbuntuMono Nerd Font', 'zihunzhengwensongkai'",
+    "explorer.confirmDelete": false,
+    "git.enableStatusBarSync": false,
+    "git.showCommitInput": false,
+    "git.showInlineOpenFileAction": false,
+    "git.showProgress": false,
+    "git.showReferenceDetails": false,
+    "git.suggestSmartCommit": false,
+    "git.terminalAuthentication": false,
+    "git.useEditorAsCommitInput": false,
+    "git.useForcePushIfIncludes": false,
+    "git.useForcePushWithLease": false,
+    "git.useIntegratedAskPass": false,
+    "git.detectWorktrees": false,
+    "git.detectSubmodules": false
+}
