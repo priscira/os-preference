@@ -1,30 +1,28 @@
 config set shell spellcheck-enabled false
 
 config set shell prompt {
-  ${id -u} == 0 -> if {
-    ("{CSI}38;2;57;87;86m{CSI}48;2;197;104;104m  {CSI}0m")
-  }
-
-  if {
-    env -> grep "^VIRTUAL_ENV_PROMPT="
-  } then {
-    ("{CSI}38;2;57;87;86m{CSI}48;2;238;180;179m$VIRTUAL_ENV_PROMPT  {CSI}0m")
-    ("{CSI}38;2;238;180;179m{CSI}0m")
-  }
-
-  ("{CSI}38;2;31;111;139m{CSI}48;2;245;173;146m$USER  {CSI}0m")
-  ("{CSI}38;2;245;173;146m{CSI}0m")
-
   set pwdEcho = ""
   if { $PWD != $HOME } then {
     a $PWD -> regexp "s-$HOME/?--" -> set pwdEcho
   }
 
-  ("{CSI}38;2;238;180;179m{CSI}48;2;31;111;139m$pwdEcho  {CSI}0m")
-  ("{CSI}38;2;31;111;139m{CSI}0m")
+  ("{BLACK}{CSI}48;2;207;210;171m$USER  {RESET}")
+  ("{CSI}38;2;207;210;171m{RESET}")
+  ("{CSI}38;2;207;210;171m{CSI}48;2;138;180;213m{BLACK}$pwdEcho  {RESET}")
+
+  if {
+    env -> grep "^VIRTUAL_ENV_PROMPT="
+  } then {
+    ("{CSI}38;2;138;180;213m{RESET}")
+    ("{CSI}38;2;138;180;213m{CSI}48;2;255;175;209m{BLACK}$VIRTUAL_ENV_PROMPT  {RESET}")
+    ("{CSI}38;2;255;175;209m{RESET}")
+  } else {
+    ("{CSI}38;2;138;180;213m{RESET}")
+  }
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT = 1
 export GOPATH="$HOME/.gopkg"
+export COLORTERM=truecolor
 
 alias lls = exec g
