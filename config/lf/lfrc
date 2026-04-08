@@ -1,0 +1,139 @@
+set borderfmt "\033[0m"
+set copyfmt ""
+set cursoractivefmt "\033[7m"
+set cursorparentfmt "\033[7m"
+set cursorpreviewfmt "\033[7m"
+set errorfmt "\033[31m"
+set menufmt "\033[0m"
+set menuheaderfmt "\033[1m"
+set menuselectfmt "\033[7m"
+set numberfmt "\033[33m"
+# set numbercursorfmt ""
+set promptfmt "\033[92;1m%u\033[0m  \033[95m%d\033[0m"
+set rulerfmt " "
+set selectfmt "\033[105m"
+set statfmt "\033[32m%p\033[0m %g %s %t"
+set tagfmt "\033[31m"
+set visualfmt "\033[46m"
+
+set shell murex
+set shellflag '-c'
+set shellopts '-quiet:'
+# set borderstyle 'box'
+set drawbox false
+set icons true
+set info 'size:group'
+set mouse false
+set ratios 1:2:3
+set sortby 'natural'
+set tabstop 2
+
+set dircounts false
+set dirfirst true
+set dupfilefmt '%f-%n'
+set infotimefmtnew '06-1-2'
+set infotimefmtold '06-1-2'
+set number false
+set period 0
+set preload false
+set preview true
+set previewer ""
+set rulerfile ""
+set timefmt '06-1-2 15:04:05'
+set truncatechar '-'
+set watch false
+
+set anchorfind true
+set autoquit true
+set filtermethod 'text'
+set findlen 1
+set hidden false
+set history true
+set ignorecase true
+set incfilter false
+set incsearch false
+set mergeindicators true
+set relativenumber false
+set reverse false
+set searchmethod 'text'
+set selmode 'all'
+set showbinds true
+
+: clearmaps
+
+map q quit
+map ; shell
+
+map <up> up
+map <down> down
+map <left> updir
+map <right> open
+map k up
+map j down
+map h updir
+map l open
+map <home> top
+map <end> bottom
+map <pgup> page-up
+map <pgdn> page-down
+map <c-u> half-up
+map <c-d> half-down
+map K toggle
+map J toggle
+map H invert
+map L invert
+map <c-h> :set hidden!
+map . :set hidden!
+
+map y copy
+map d cut
+map p paste
+map <delete> delete
+map r rename
+
+map R reload
+
+map / search
+map n search-next
+map N search-prev
+
+map gr :cd /
+map gu :cd /usr
+map gh :cd ~
+map gc :cd ~/.config
+map gl :cd ~/.local
+map gd :cd ~/下载
+
+cmap <esc> cmd-escape
+cmap <enter> cmd-enter
+cmap <down> cmd-history-next
+cmap <up> cmd-history-preview
+cmap <left> cmd-left
+cmap <right> cmd-right
+cmap <home> cmd-home
+cmap <end> cmd-end
+cmap <delete> cmd-delete
+cmap <backspace> cmd-delete-back
+cmap <tab> # cmd-complete
+cmap <c-j> # cmd-enter
+cmap <c-c> # cmd-interrupt
+cmap <c-n> # cmd-history-next
+cmap <c-p> # cmd-history-preview
+cmap <c-b> # cmd-left
+cmap <c-f> # cmd-right
+cmap <c-a> # cmd-home
+cmap <c-e> # cmd-end
+cmap <c-d> # cmd-delete
+cmap <c-u> # cmd-delete-home
+cmap <c-k> # cmd-delete-end
+cmap <c-w> # cmd-delete-unix-word
+cmap <c-y> # cmd-yank
+cmap <c-t> # cmd-transpose
+cmap <a-t> # cmd-transpose-word
+cmap <a-f> # cmd-word
+cmap <a-b> # cmd-word-back
+cmap <a-d> # cmd-delete-wor
+cmap <a-backspace> # cmd-delete-word-back
+cmap <a-c> # cmd-capitalize-word
+cmap <a-u> # cmd-uppercase-word
+cmap <a-l> # cmd-lowercase-word

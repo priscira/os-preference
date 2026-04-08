@@ -1,4 +1,5 @@
 config set shell spellcheck-enabled false
+config set proc force-tty true
 
 config set shell prompt {
   set pwdEcho = ""
@@ -21,8 +22,32 @@ config set shell prompt {
   }
 }
 
+## 拒绝`python`虚拟环境管理器设置的`prompt`
 export VIRTUAL_ENV_DISABLE_PROMPT = 1
 export GOPATH="$HOME/.gopkg"
 export COLORTERM=truecolor
 
-alias lls = exec g
+## 使用`g`实现的`ls`
+alias lgls = exec g
+
+## 使用`lf`实现的`file manager`
+## 增加参数`-cd`，用以实现`lf`退出后的跳转
+function llfm {
+  set cdBolt = false
+  $PARAMS -> foreach pami {
+    $pami == "-cd" -> if {
+      cdBolt = true
+    } else {
+      out $pami
+    }
+  } -> set pamArrs
+
+  # 当pamArrs为空时，@运算错误
+  $pamArrs -> count -> !if { out "" } else { out @pamArrs } -> set pamPhrs
+
+  $cdBolt -> if {
+    cd ${exec lf -print-last-dir $pamPhrs}
+  } else {
+    exec lf $pamPhrs
+  }
+}
