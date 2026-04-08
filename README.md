@@ -128,6 +128,27 @@
 - [`poetry-plugin-export`](https://github.com/python-poetry/poetry-plugin-export): 导出`pyproject.toml`为`requirements.txt`或`pylock.toml`
 - [`poetry-plugin-sort`](https://github.com/andrei-shabanski/poetry-plugin-sort): 在`poetry add`后*自动*排序`pyproject.toml`中的`dependencies`。提供`poetry sort`命令手动触发排序。
 
+### Trae
+
+#### Extension
+
+|插件|链接|作者|描述|
+| -------------------------| -----------------------------| -----------------| -----------------|
+|`Kiro Theme`|[https://marketplace.visualstudio.com/items?itemName=MohdZaid.kiro-theme](https://marketplace.visualstudio.com/items?itemName=MohdZaid.kiro-theme)|`Mohd Zaid`||
+|`Simple Icons`|[https://marketplace.visualstudio.com/items?itemName=Comdec.simple-icons](https://marketplace.visualstudio.com/items?itemName=Comdec.simple-icons)|`Comdec`||
+|`Pylance`|[https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)|`Microsoft`|`python` LSP|
+
+#### VSIX Download in Browser
+
+```javascript
+(function gainVscVsix() {
+  const scriptEle = document.querySelector('.jiContent');
+  const { "Resources": { PublisherName, ExtensionName, Version } } = JSON.parse(scriptEle.textContent);
+  const reap = `https://marketplace.visualstudio.com/_apis/public/gallery/publishers/${PublisherName}/vsextensions/${ExtensionName}/${Version}/vspackage`;
+  console.info(reap);
+})()
+```
+
 ## Use
 
 ```shell
