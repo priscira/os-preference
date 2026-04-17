@@ -1,0 +1,59 @@
+trypipe {
+  poetry env activate -> set envPoeActInfo
+  out $envPoeActInfo -> regexp "f<($HOME/.*)/bin/activate<" -> set envRhiz
+  out $envRhiz -> format path -> [ -1 ] -> export VIRTUAL_ENV_PROMPT
+}
+catch {
+  return 1
+}
+
+global _old_virtual_path = $PATH
+export PATH = "$(envRhiz)/bin:$(PATH)"
+
+global str _old_virtual_pythonhome
+if { env -> grep "^PYTHONHOME=" } then {
+  _old_virtual_pythonhome = $PYTHONHOME
+  !export PYTHONHOME
+}
+
+private _old_prompt ${config get shell prompt}
+global bool venv_disable_prompt = true
+
+if {
+  or \
+  { env -> grep "^VIRTUAL_ENV_DISABLE_PROMPT=" -> ! } \
+  { $VIRTUAL_ENV_DISABLE_PROMPT == '' }
+} then {
+  venv_disable_prompt = false
+  config set shell prompt {
+    ("$VIRTUAL_ENV_PROMPT")
+    (" ")
+    _old_prompt
+  }
+}
+
+alias pydoc = python -m pydoc
+
+function deact {
+  !alias pydoc
+
+  if { $_old_virtual_path } then {
+    export PATH = $_old_virtual_path
+  }
+
+  if { $_old_virtual_pythonhome } then {
+    export PYTHONHOME = $_old_virtual_pythonhome
+  }
+
+  if { $venv_disable_prompt -> ! } then {
+    config set shell prompt {
+      ${_old_prompt}
+    }
+  }
+
+  !export VIRTUAL_ENV
+  !export VIRTUAL_ENV_PROMPT
+
+  !function deact
+}
+summary deact "exit python venv"
