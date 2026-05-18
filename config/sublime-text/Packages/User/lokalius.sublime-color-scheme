@@ -1,5 +1,5 @@
 {
-  "name": "logarius",
+  "name": "lokalius",
   "variables": {
     "redish": "#d47693",
     "orange": "",
@@ -84,11 +84,11 @@
           "foreground": "#bb67c8"
       },
       {
-          // TODO: 常量, 深蓝色, 设置为红色会影响错误标识
+          // 常量, 设置为红色会影响错误标识
           "name": "Constants",
           "scope": "meta.constant, entity.name.constant",
-          "font_style": "italic",
-          "foreground": "#0004ff"
+          // "font_style": "italic",
+          "foreground": "#6e823d"
       },
       {
           // 变量

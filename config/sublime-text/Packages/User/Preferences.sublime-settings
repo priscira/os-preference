@@ -1,25 +1,23 @@
 {
-	"theme": "logarius.sublime-theme",
-	"font_face": "UbuntuMono Nerd Font Mono",
-  "line_padding_top": 1,
+  "theme": "lokalius.sublime-theme",
+  "font_face": "UbuntuSansMono Nerd Font",
+  "line_padding_top": 2,
   "line_padding_bottom": 2,
-	"tab_size": 2,
-	"rulers": [[79, "stippled", 1], [109, "stippled", 1]],
-	"translate_tabs_to_spaces": true,
-	"index_files": true,
-	"color_scheme": "logarius.sublime-color-scheme",
-	"font_size": 14,
-	"font_options": ["gdi"],
-	"default_encoding": "utf-8",
-	"fold_buttons": true,
-	"fade_fold_buttons": false,
-	"linters": {
+  "tab_size": 2,
+  "rulers": [[77, "stippled", 1], [117, "stippled", 1]],
+  "translate_tabs_to_spaces": true,
+  "index_files": true,
+  "color_scheme": "lokalius.sublime-color-scheme",
+  "font_size": 14,
+  "font_options": ["gdi"],
+  "default_encoding": "utf-8",
+  "fold_buttons": true,
+  "fade_fold_buttons": false,
+  "linters": {
     "quick-lint-js": {
       "executable": "quick-lint-js",
+      },
     },
-	},
-	"ignored_packages":
-	[
-		"Vintage",
-	],
+  "ignored_packages": [
+  ],
 }

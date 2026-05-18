@@ -43,7 +43,7 @@
         "color": "#9a6647",
         "font.bold": true,
         "font.size": 14,
-        "font.face": "UbuntuMono Nerd Font SanJizhh"
+        "font.face": "OPPO Sans 4.0"
     }, {
         // 文件结构栏: 背景
         "class": "tree_row",
@@ -76,7 +76,7 @@
         "class": "sidebar_label",
         "fg": "#337a93",
         "font.size": 15,
-        "font.face": "UbuntuMono Nerd Font SanJizhh"
+        "font.face": "OPPO Sans 4.0"
     }, {
         // 文件结构栏: 覆盖字体颜色
         "class": "sidebar_label",
@@ -551,7 +551,7 @@
         "font.italic": false,
         "font.bold": false,
         "font.size": 15,
-        "font.face": "UbuntuMono Nerd Font SanJizhh"
+        "font.face": "OPPO Sans 4.0"
     }, {
         // 还未保存生成文件的标签
         "class": "tab_label",
@@ -737,7 +737,7 @@
         // TODO: 黄色
         "class": "quick_panel",
         "row_padding": [13, 7],
-        "layer0.tint": "#e4ff00",
+        "layer0.tint": "#daff00",
         "layer0.opacity": 1
     }, {
         // Ctrl Shift P 条目背景
@@ -910,13 +910,15 @@
         "class": "auto_complete",
         "row_padding": [5, 0]
     }, {
+        // 代码提示 选中行
         "class": "table_row",
         "layer0.texture": "ayu/assets/tree-highlight.png",
-        "layer0.tint": "#ff0400",
+        "layer0.tint": "#ededea",
         "layer0.inner_margin": [8, 4],
         "layer0.opacity": 0,
         "layer1.texture": "ayu/assets/tree-highlight-border.png",
-        "layer1.tint": "#ff0400",
+        // 代码提示 选中行 边框
+        "layer1.tint": "#ededea",
         "layer1.inner_margin": [8, 4],
         "layer1.opacity": 0
     }, {
@@ -926,13 +928,13 @@
         ],
         "layer0.opacity": 1,
         "layer1.opacity": 1
-    },
-    {
+    }, {
+        // 代码提示 已匹配字符
         "class": "auto_complete_label",
         "fg": "transparent",
-        "match_fg": "#ffaa33",
+        "match_fg": "#337a93",
         "selected_fg": "transparent",
-        "selected_match_fg": "#ffaa33",
+        "selected_match_fg": "#337a93",
         "fg_blend": true
     },
     {
@@ -2019,7 +2021,7 @@
         "shadow_offset": [0, 0],
         "font.bold": false,
         "font.size": 14,
-        "font.face": "UbuntuMono Nerd Font SanJizhh"
+        "font.face": "UbuntuMono Nerd Font"
     },
     {
         "class": "label_control",
@@ -2072,6 +2074,6 @@
         "class": "tool_tip_label_control",
         "color": "#f8f9fa",
         "font.size": 14,
-        "font.face": "UbuntuMono Nerd Font SanJizhh"
+        "font.face": "UbuntuMono Nerd Font"
     },
 ]
