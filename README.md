@@ -24,6 +24,7 @@ ln -s ~/Lokalius/OsPreferences/config/g ~/.config/g
 ln -s ~/Lokalius/OsPreferences/config/murex ~/.config/murex
 ln -s ~/Lokalius/OsPreferences/config/pypoetry ~/.config/pypoetry
 ln -s ~/Lokalius/OsPreferences/config/trae/settings.json ~/.config/Trae/User/settings.json
+ln -s ~/Lokalius/OsPreferences/config/trae/keybindings.json ~/.config/Trae/User/keybindings.json
 ```
 
 ## About
