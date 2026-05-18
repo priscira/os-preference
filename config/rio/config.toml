@@ -3,7 +3,7 @@ theme = "lokalius-kiro-rio"
 padding-x = 13
 padding-y = [13, 13]
 
-line-height = 1.3
+line-height = 1.1
 confirm-before-quit = false
 
 [panel]
@@ -29,12 +29,26 @@ decorations = "Disabled"
 colorspace = "display-p3"
 
 [fonts]
-size = 22
-family = "UbuntuMono Nerd Font"
-# `rio`的字体名称：使用`fc-list`，截取`:`后面的第一个字符串
-extras = [{ family = "字魂正文宋楷(商用需授权)" }, { family = "OPPO Sans 4.0" }]
+size = 20
+symbol-map = [
+  { start = "4E00", end = "9FFF", font-family = "也字工厂淡淡黑大字库" },
+  { start = "3400", end = "4DBF", font-family = "也字工厂淡淡黑大字库" },
+  { start = "20000", end = "2A6DF", font-family = "尙古黑体SC" }
+]
 hinting = true
-disable-warnings-not-found = true
+disable-warnings-not-found = false
+
+[fonts.regular]
+family = "UbuntuSansMono Nerd Font"
+style = "medium"
+
+[fonts.bold]
+family = "UbuntuSansMono Nerd Font"
+style = "bold"
+
+[fonts.italic]
+family = "UbuntuSansMono Nerd Font"
+style = "italic"
 
 [navigation]
 mode = "Tab"
@@ -53,6 +67,7 @@ keys = [
 
   { key = "left", with = "control | shift", action = "SelectPrevTab" },
   { key = "right", with = "control | shift", action = "SelectNextTab" },
+  { key = "t", with = "control | shift", action = "CreateTab" },
   { key = "w", with = "control | shift", action = "CloseTab" },
   { key = "1", with = "control | shift", action = "SelectTab(0)" },
   { key = "2", with = "control | shift", action = "SelectTab(1)" },

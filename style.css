@@ -1,0 +1,36 @@
+:root {
+  --base: #3DC2D4; /* 运算符 */
+  --background: #002F38;
+  --foreground: #61BFBF;
+  --highlight-background: #006E8E;
+  --selection-background: #153F48;
+
+  --light-background: #ECF3F2;
+  --light-foreground: #2C8F8F;
+
+  --black: #0B1C1A;
+  --light-black: #0E181F;
+  --white: #DEF0F0;
+  --gray: #929595; /* 注释 */
+  --red: #C07474; /* self, cls等特殊变量 */
+  --bright-red: #DC8E8E; /* 关键字 */
+  --orange: #C2845A; /* 类 */
+  --bright-orange: #CCA283; /* 接口 */
+  --yellow: #B8A764; /* 参数 */
+  --bright-yellow: #D8D781; /* 模块, namespace */
+  --green: #AAC694; /* 函数调用 */
+  --bright-green: #73A084; /* 函数声明 */
+  --blue: #7196A8; /* 类型 */
+  --bright-blue: #71B6DE; /* 静态变量，枚举变量 */
+  --cyan: #4F8684;
+  --bright-cyan: #6A8DA5;
+  --purple: #755C83;
+  --bright-purple: #AA9DBC; /* 装饰, 宏 */
+  --magenta: #C66F92; /* 字符串 */
+  --bright-magenta: #D372A8; /* 数字 */
+  --brown: #8B7E6E; /* 搜索 */
+
+  --warning: #C27D4A;
+  --error: #A25C6E;
+}
+

@@ -2,9 +2,10 @@
     "trae.notification.enableOffersAndPromotions": false,
     "trae.tab.enableAutoImport": false,
     "trae.tab.enableAutoRename": false,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'UbuntuSansMono NF', 'YEFONTDanDanHeiDZK', 'Shanggu Sans HW SC'",
+    "editor.fontWeight": "500",
     "editor.tabSize": 2,
-    "editor.fontFamily": "'UbuntuMono Nerd Font', 'zihunzhengwensongkai', 'OPPO Sans 4.0'",
     "editor.rulers": [
         { "column": 100, "color": "#044b5b" }
     ],
@@ -43,5 +44,15 @@
     "git.useIntegratedAskPass": false,
     "git.detectWorktrees": false,
     "git.detectSubmodules": false,
-    "python.analysis.typeCheckingMode": "standard"
+    "python.analysis.typeCheckingMode": "standard",
+    "explorer.confirmDragAndDrop": false,
+    "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+    "python.analysis.typeEvaluation.strictParameterNoneValue": false,
+    "python.analysis.supportAllPythonDocuments": true,
+    "editor.detectIndentation": false,
+    "editor.bracketPairColorization.enabled": false,
+    "nim.buildCommand": "cpp",
+    "nim.nimprettyMaxLineLen": 100,
+    "nim.nimprettyIndent": 2,
+    "nim.inlayHints.exceptionHints.enable": false
 }

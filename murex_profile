@@ -30,12 +30,12 @@ export COLORTERM=truecolor
 ## 使用`g`实现的`ls`
 alias lgls = exec g
 
-## 使用`lf`实现的`file manager`
-## 增加参数`-cd`，用以实现`lf`退出后的跳转
+## 使用`lf`实现的`file manager`，自带`cd`
+## 增加参数`-nocd`，用以实现`lf`退出后的跳转
 function llfm {
   set cdBolt = false
   $PARAMS -> foreach pami {
-    $pami == "-cd" -> if {
+    $pami == "-nocd" -> if {
       cdBolt = true
     } else {
       out $pami
@@ -43,12 +43,12 @@ function llfm {
   } -> set pamArrs
 
   # 当pamArrs为空时，@运算错误
-  $pamArrs -> count -> !if { out "" } else { out @pamArrs } -> set pamPhrs
+  $pamArrs -> count -> !if { %[''] -> set pamArrs }
 
   $cdBolt -> if {
-    cd ${exec lf -print-last-dir $pamPhrs}
+    exec lf @pamArrs
   } else {
-    exec lf $pamPhrs
+    cd ${exec lf -print-last-dir @pamArrs}
   }
 }
 summary llfm "lf with cd"
@@ -66,12 +66,12 @@ function lpoe {
   } -> set pamArrs
 
   # 当pamArrs为空时，@运算错误
-  $pamArrs -> count -> !if { out "" } else { out @pamArrs } -> set pamPhrs
+  $pamArrs -> count -> !if { %[''] -> set pamArrs }
 
   $actBolt -> if {
     source "$HOME/.config/murex/lib/poetry-venv.mx"
   } else {
-    exec poetry $pamPhrs
+    exec poetry @pamArrs
   }
 }
 summary lpoe "poetry with activate"

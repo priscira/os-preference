@@ -2,9 +2,9 @@
 
 |方面|名称|链接|描述|
 | -------------------------| -----------------------------| -----------------| -----------------|
-|Font|`Ubuntu Mono`|[https://design.ubuntu.com/font](https://design.ubuntu.com/font)||
-|Font|字魂正文宋楷|||
-|Font|`OPPO Sans 4.0`|[https://www.coloros.com/article/A00000074](https://www.coloros.com/article/A00000074)||
+|Font|`Ubuntu Sans`|[https://design.ubuntu.com/font](https://design.ubuntu.com/font)||
+|Font|也字工厂淡淡黑|[https://www.yefont.com/](https://www.yefont.com/fontDetails/316)||
+|Font|尙古字体|[https://github.com/GuiWonder/Shanggu/](https://github.com/GuiWonder/Shanggu)||
 |Gtk|`Andromeda`|[https://www.pling.com/p/2039961](https://www.pling.com/p/2039961)||
 |Icons|`Azure Glassy Dark Icons`|[https://www.pling.com/p/2154036](https://www.pling.com/p/2154036)||
 |Icons|`Elysia`|[https://www.pling.com/p/2167806](https://www.pling.com/p/2167806)|*cursor*|
